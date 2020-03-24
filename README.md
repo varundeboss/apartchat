@@ -32,6 +32,38 @@ search_apartment.py is the NLP based search engine which uses `spacy` to do natu
 	and connects to the backend DB for quering out data based on posts, users and apartments
 ```
 
+## Usage
+
+```bash
+cd /home/varun/workspace/personal/apartchat
+python3 search_apartment.py
+```
+1) Execute the Apartment Search Program
+![Start Apartment Search Program](https://raw.githubusercontent.com/varundeboss/apartchat/master/screenshots/1_start_search_program.png)
+2) Get User's type (SHARER / SEEKER)
+![User Question](https://raw.githubusercontent.com/varundeboss/apartchat/master/screenshots/2_user_question.png)
+3) Enter the welcome page
+![Welcome page](https://raw.githubusercontent.com/varundeboss/apartchat/master/screenshots/3_welcome_page.png)
+4) Get the first post
+![First post](https://raw.githubusercontent.com/varundeboss/apartchat/master/screenshots/4_first_post.png)
+5) Get next post (By entering 'n')
+![Next post](https://raw.githubusercontent.com/varundeboss/apartchat/master/screenshots/5_next_post.png)
+6) Clear the searching params (By entering 'c')
+![Clear params](https://raw.githubusercontent.com/varundeboss/apartchat/master/screenshots/6_cleared_post.png)
+7) Move on to second post
+![Second post](https://raw.githubusercontent.com/varundeboss/apartchat/master/screenshots/6_second_post.png)
+8) Post belonging to apartments nearme based on geospatial calculation between geocodes
+![Nearme posts](https://raw.githubusercontent.com/varundeboss/apartchat/master/screenshots/7_nearme_apartment.png)
+9) Nearby posts
+![Nearby posts](https://raw.githubusercontent.com/varundeboss/apartchat/master/screenshots/8_nearby_post.png)
+10) Posts based on price range
+![Price posts](https://raw.githubusercontent.com/varundeboss/apartchat/master/screenshots/9_price_range.png)
+11) End of posts (No more)
+![No posts](https://raw.githubusercontent.com/varundeboss/apartchat/master/screenshots/10_no_more_posts.png)
+12) Thank you note to use
+![Thank you](https://raw.githubusercontent.com/varundeboss/apartchat/master/screenshots/11_thank_you.png)
+
+
 ## Welcome page
 
 ```text
@@ -96,37 +128,6 @@ APARTMENT_TAGS = [ "Air Conditioned", "Elevator", "Swimming Pool", "Parking", "D
 	"Bus stop", "Lake view", "Sea Side", "Pet Friendly", "Pets Allowed", "Metro", "Beach Side",
 ]
 ```
-
-## Usage
-
-```bash
-cd /home/varun/workspace/personal/apartchat
-python3 search_apartment.py
-```
-1) Execute the Apartment Search Program
-![Start Apartment Search Program](https://raw.githubusercontent.com/varundeboss/apartchat/master/screenshots/1_start_search_program.png)
-2) Get User's type (SHARER / SEEKER)
-![User Question](https://raw.githubusercontent.com/varundeboss/apartchat/master/screenshots/2_user_question.png)
-3) Enter the welcome page
-![Welcome page](https://raw.githubusercontent.com/varundeboss/apartchat/master/screenshots/3_welcome_page.png)
-4) Get the first post
-![First post](https://raw.githubusercontent.com/varundeboss/apartchat/master/screenshots/4_first_post.png)
-5) Get next post (By entering 'n')
-![Next post](https://raw.githubusercontent.com/varundeboss/apartchat/master/screenshots/5_next_post.png)
-6) Clear the searching params (By entering 'c')
-![Clear params](https://raw.githubusercontent.com/varundeboss/apartchat/master/screenshots/6_cleared_post.png)
-7) Move on to second post
-![Second post](https://raw.githubusercontent.com/varundeboss/apartchat/master/screenshots/6_second_post.png)
-8) Post belonging to apartments nearme based on geospatial calculation between geocodes
-![Nearme posts](https://raw.githubusercontent.com/varundeboss/apartchat/master/screenshots/7_nearme_apartment.png)
-9) Nearby posts
-![Nearby posts](https://raw.githubusercontent.com/varundeboss/apartchat/master/screenshots/8_nearby_post.png)
-10) Posts based on price range
-![Price posts](https://raw.githubusercontent.com/varundeboss/apartchat/master/screenshots/9_price_range.png)
-11) End of posts (No more)
-![No posts](https://raw.githubusercontent.com/varundeboss/apartchat/master/screenshots/10_no_more_posts.png)
-12) Thank you note to use
-![Thank you](https://raw.githubusercontent.com/varundeboss/apartchat/master/screenshots/11_thank_you.png)
 
 ## Roadmap
 

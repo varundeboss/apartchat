@@ -125,7 +125,7 @@ python3 search_apartment.py
 ## Disclaimer
 
 The NLP based search engine is only a prototype for POC that searches for online based posts (user / apartments) could be 
-done using machine learning models and NLP when trained on proper corpus of data set 
+done using machine learning models and NLP when trained on proper corpus of data sets
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.

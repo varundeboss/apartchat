@@ -13,7 +13,7 @@ pip3 install spacy
 
 ## Dependencies
 
-```bash
+```text
 generate_data.py is used for generating user, apartment and post related data based on user input count
 
 generate_load_data.sh executes generate_data.py to generate the following data and load them into couchbase(NoSQL DB)

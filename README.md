@@ -4,8 +4,9 @@ Apartchat is a NLP based search engine for searching apartment seeking and shari
 
 ## Prerequisite
 
-```bash
+```text
 Couchbase - https://docs.couchbase.com/server/current/install/ubuntu-debian-install.html
+Install and create a bucket `vc-search` with credential `vc-search`
 ```
 
 ## Installation

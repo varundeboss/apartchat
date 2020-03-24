@@ -111,7 +111,7 @@ def rows_to_str(entities, user_master_resp, apartment_master_resp):
 	global COUNTER	
 
 	post_str = """=====================================================|
-			POST #%(counter)d                      |
+			POST #%(counter)d / %(post_count)d
 =====================================================|
           User Details                               |
 =====================================================|
@@ -121,9 +121,9 @@ def rows_to_str(entities, user_master_resp, apartment_master_resp):
 | Contact    : %(contact)s
 | Food Type  : %(food_type)s
 | User Tags  : %(user_tags)s
-| User Type  : %(user_type)s
-"""
-	apartment_str = """=====================================================|
+| User Type  : %(user_type)s"""
+	apartment_str = """
+=====================================================|
         Apartment Details                            |
 =====================================================|
 | Name       : %(apartment_name)s
@@ -135,28 +135,31 @@ def rows_to_str(entities, user_master_resp, apartment_master_resp):
 | Furnish    : %(furnish_type)s
 | Apart Tags : %(apartment_tags)s
 | Distance   : %(distance)s
-=====================================================|
-"""
+=====================================================|"""
 	user_type = "SHARER" if entities["user_type"][0] == "SEEKER" else "SEEKER"
-	post_master_str = "You are a '%(user_type)s' searching for\nSEARCH PARAMS: %(entities)s\n\n" % {
+	post_master_str = "You are a '%(user_type)s' searching for\nSEARCH PARAMS: %(entities)s\n" % {
 		"user_type": user_type,
-		"entities": entities,
+		"entities": entities
 	}
 
 	# for user_index in range(1):
 	user_index = COUNTER
-	if COUNTER >= (len(user_master_resp) - 1):
-		post_master_str = "That's all posts for today folks!!!\n"
+	if COUNTER > (len(user_master_resp) - 1) or COUNTER < 0:
+		post_master_str += """=====================================================|
+That's all posts for today folks!!!                  |"""
 	else:
 		user_master_resp[user_index]["counter"] = COUNTER + 1
+		user_master_resp[user_index]["post_count"] = len(user_master_resp)
 		post_master_str += post_str % user_master_resp[user_index]
 		if apartment_master_resp:
 			apartment_master_resp[user_index]["apartment_name"] = apartment_master_resp[user_index]["name"]
 			post_master_str += apartment_str % apartment_master_resp[user_index]
 
-	post_master_str += """=====================================================|
+	post_master_str += """
+=====================================================|
 *** Type 'C/c' to clear your search criterias!!! *** |
 *** Type 'N/n' to show next post!!! ***              |
+*** Type 'P/p' to show previous post!!! ***          |
 *** Type 'W/w' to show the welcome message!!! ***    |
 =====================================================|"""
 
@@ -343,6 +346,8 @@ def parse_search_text(search_text, search_type):
                       - Looking for a semi furnished apartment which is pet friendly and preferably sea side\n\
            *** Type 'C/c' to clear your search criterias!!! *** \n\
            *** Type 'N/n' to show next post!!! *** \n\
+           *** Type 'P/p' to show previous post!!! *** \n\
+           *** Type 'Q/q' to quit the program!!! *** \n\
            *** Type 'W/w' to show the welcome message!!! *** " % {
 			"user_type": "SHARER" if search_text == "1" else "SEEKER",
 			"user_type_msg": "\"Sharing is Caring!!!\" -Anonymous" if search_text == "1" \
@@ -358,6 +363,8 @@ def parse_search_text(search_text, search_type):
 			return parse_search_text(USER_TYPES[ENTITIES["user_type"][0]], "user_type")
 		elif search_text.lower() == "n":
 			COUNTER += 1
+		elif search_text.lower() == "p":
+			COUNTER -= 1
 		elif search_text.lower() == "q":
 			return "Thank you %(name)s for using APARTCHAT! Hope to see you soon!!!" % {
 				"name": user_json["name"],

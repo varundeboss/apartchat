@@ -5,7 +5,7 @@ import random
 import itertools
 from randomtimestamp import randomtimestamp
 
-TOTAL_DATA = 10000
+TOTAL_DATA = 20000
 
 def minimize_dict(my_dict):
 	return { key: list(itertools.chain(*val)) for key, val in my_dict.items() }
@@ -29,7 +29,8 @@ FOOD_TYPES = {
 USER_TAGS = {i: minimize_list([i]) for i in [
 	"Dog Friendly", "Cat Friendly", "Party", "Dog Lover", "Cat Lover", "Loves Cat", "Loves Dog", "Easy Going",
 	"Non Smoker", "Non Smoking", "Non Drinker", "Non Drinking", "Doesnt Drink", "Doesn't Drink", "Doesnt Smoke", 
-	"Doesn't Smoke", "Dont Smoke", "Don't Smoke", "Don't Drink", "Dont Drink", "Not Drink", "Not Smoke"
+	"Doesn't Smoke", "Dont Smoke", "Don't Smoke", "Don't Drink", "Dont Drink", "Not Drink", "Not Smoke", "Loves Pet",
+	"Pet Lover",
 ]}
 
 APARTMENT_FURNISH_TYPE = {

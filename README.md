@@ -59,6 +59,38 @@ APARTCHAT: Welcome SHARER. "Sharing is Caring!!!" -Anonymous
            *** Type 'W/w' to show the welcome message!!! ***
 ```
 
+## Enum values
+
+The following are the enum values which are used for NLP and is expandable in the future based on market research
+```python
+USER_TYPES = [
+	"SHARER", # One who is already a renter looking to share an apartment
+	"SEEKER" # One who is looking for an apartment to rent
+]
+
+GENDERS = {
+	"M": ["Male", "Guy", "Man", "He"],
+	"F": ["Female", "Girl", "Woman", "She"],
+}
+
+FOOD_TYPES = {
+	'Vegetarian': ["veg", "Vegetarian"],
+	'Non Vegetarian': ["non veg", "non Vegetarian"],
+}
+
+USER_TAGS = [ "Dog Friendly", "Cat Friendly", "Party", "Dog Lover", "Cat Lover", "Loves Cat", "Loves Dog", "Easy Going",
+	"Non Smoker", "Non Smoking", "Non Drinker", "Non Drinking", "Doesnt Drink", "Doesn't Drink", "Doesnt Smoke", 
+	"Doesn't Smoke", "Dont Smoke", "Don't Smoke", "Don't Drink", "Dont Drink", "Not Drink", "Not Smoke", "Loves Pet",
+	"Pet Lover",
+]
+
+APARTMENT_FURNISH_TYPE = [ "FULLY-FURNISHED", "SEMI-FURNISHED", "UN-FURNISHED", ]
+
+APARTMENT_TAGS = [ "Air Conditioned", "Elevator", "Swimming Pool", "Parking", "Dog Friendly", "Cat Friendly", "Park", 
+	"Bus stop", "Lake view", "Sea Side", "Pet Friendly", "Pets Allowed", "Metro", "Beach Side",
+]
+```
+
 ## Usage
 
 ```bash

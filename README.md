@@ -26,6 +26,39 @@ search_apartment.py is the NLP based search engine which uses `spacy` to do natu
 	and connects to the backend DB for quering out data based on posts, users and apartments
 ```
 
+## Welcome page
+
+```text
+APARTCHAT: Welcome SHARER. "Sharing is Caring!!!" -Anonymous
+           Please input your search text in free english text! Yes, you heard that right!!!
+                  You could search using following attributes
+                      - gender
+                      - food_type
+                      - user_tags
+                      - distance
+                      - price_range
+                      - bhk
+                      - balcony
+                      - furnish
+                      - apartment_tags
+           Examples
+                  SHARER
+                      - Looking to share my apartment with a vegetarian
+                      - Need a male tenant who is preferably a dog lover
+                      - Looking for a non vegetarian female tenant preferably
+                      - Need a flatmate who preferably doesn't smoke and don't drink
+                  SEEKER
+                      - Need a 3 bhk apartment with a swimming pool in the range of 10 to 12k
+                      - Need a flat, preferably nearby a metro with at least 2 balconies
+                      - Looking for a apartment near me
+                      - Looking for a semi furnished apartment which is pet friendly and preferably sea side
+           *** Type 'C/c' to clear your search criterias!!! *** 
+           *** Type 'N/n' to show next post!!! *** 
+           *** Type 'P/p' to show previous post!!! *** 
+           *** Type 'Q/q' to quit the program!!! *** 
+           *** Type 'W/w' to show the welcome message!!! ***
+```
+
 ## Usage
 
 ```bash

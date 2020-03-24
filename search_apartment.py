@@ -336,8 +336,8 @@ def parse_search_text(search_text, search_type):
            Examples\n\
                   SHARER\n\
                       - Looking to share my apartment with a vegetarian\n\
-                      - Need a female tenant who is preferably a dog lover\n\
-                      - Looking for a non vegetarian male tenant preferably in his early 20s\n\
+                      - Need a male tenant who is preferably a dog lover\n\
+                      - Looking for a non vegetarian female tenant preferably\n\
                       - Need a flatmate who preferably doesn't smoke and don't drink\n\
                   SEEKER\n\
                       - Need a 3 bhk apartment with a swimming pool in the range of 10 to 12k\n\

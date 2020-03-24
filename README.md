@@ -2,6 +2,12 @@
 
 Apartchat is a NLP based search engine for searching apartment seeking and sharing posts by users
 
+## Prerequisite
+
+```bash
+Couchbase - https://docs.couchbase.com/server/current/install/ubuntu-debian-install.html
+```
+
 ## Installation
 
 Use the package manager [pip3](https://pip.pypa.io/en/stable/) to install requirements.

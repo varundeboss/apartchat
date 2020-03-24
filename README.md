@@ -18,6 +18,8 @@ cd /home/varun/workspace/personal/apartchat
 python3 search_apartment.py
 ```
 
+![Start Apartment Search Program](https://raw.githubusercontent.com/varundeboss/apartchat/master/screenshots/1_start_search_program.png)
+
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 

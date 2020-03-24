@@ -16,12 +16,14 @@ pip3 install spacy
 ```text
 generate_data.py is used for generating user, apartment and post related data based on user input count
 
-generate_load_data.sh executes generate_data.py to generate the following data and load them into couchbase(NoSQL DB)
+generate_load_data.sh executes generate_data.py to generate the following data and load them 
+	into couchbase(NoSQL DB)
 	1) posts
 	2) users
 	3) apartments
 
-search_apartment.py is the NLP based search engine which uses `spacy` to do natural language processing and connects to the backend DB for quering out data based on posts, users and apartments
+search_apartment.py is the NLP based search engine which uses `spacy` to do natural language processing 
+	and connects to the backend DB for quering out data based on posts, users and apartments
 ```
 
 ## Usage

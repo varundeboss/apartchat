@@ -122,6 +122,15 @@ python3 search_apartment.py
 12) Thank you note to use
 ![Thank you](https://raw.githubusercontent.com/varundeboss/apartchat/master/screenshots/11_thank_you.png)
 
+## Roadmap
+
+In future the search engine could be enhanced to include 
+1) More machine learned models
+2) Promote posts
+3) Apply decay factor to the freshness of the posts while bringing them up in the result
+4) More complex entities such as current user location to be resolved
+5) Context based searching for user / apartment tags
+
 ## Disclaimer
 
 The NLP based search engine is only a prototype for POC that searches for online based posts (user / apartments) could be 
